@@ -1,1 +1,1 @@
-# discord-llm-ssh-interpreter
+# discord-llm-agent
