@@ -84,7 +84,7 @@ isSync = {}
 def reset_llm(guildId):
     global ssh_credentials 
     if guildId in ssh_credentials:
-        llmHistory[guildId] = get_gemini_ssh_chat()
+        llmHistory[guildId] = get_gemini_ssh_chat(ssh_credentials[guildId]['memo'])
     else:
         llmHistory[guildId] = get_gemini_chat()
 
